@@ -1,0 +1,25 @@
+Data structures you should know:
+
+    Arrays
+    Linked Lists
+    Stacks
+    Queues
+    Trees
+    Graphs
+    Heaps
+    Hash sets
+    Hash tables/maps
+
+Algorithms you should know:
+
+    Breadth first search
+    Depth first search
+    Binary search
+    Quicksort
+    Mergesort
+    A*
+    Dynamic programming
+    Divide and conquer
+
+
+
