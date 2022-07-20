@@ -4,22 +4,197 @@ Data structures you should know:
     Linked Lists
     Stacks
     Queues
-    Trees
-    Graphs
+    *Trees
+    *Graphs
     Heaps
     Hash sets
-    Hash tables/maps
+    *Hash tables/maps
 
 Algorithms you should know:
 
     Breadth first search
     Depth first search
     Binary search
-    Quicksort
-    Mergesort
+    *Quicksort
+    *Mergesort
     A*
     Dynamic programming
     Divide and conquer
 
+Big O Notation
 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Arrays - 
+	- Allocation of memory is done dynamically (done during execution of code)
+	- Declared like int[] arrayName;
+	- Array type implements IEnumerable
+	- Does not accept null values
+
+
+
+Linked Lists -
+	- O(n) 
+	- Linear data structure of elements linked together via pointers
+	- Each item in the list in a node and the nodes contain a data field and a reference(link)
+	- A doubly linked list has two references, one pointed to the next node, and one pointing to the previous
+	- You can remove nodes and reinsert them which results in no additional objects allocated on the heap. This is because the references in a node can change to point at other nodes, but the memory allocated for the node stays the same
+
+	- using System.Collections.Generic 
+	- 4 different methods to add a node
+		- AddAfter
+		- AddBefore
+		- AddFirst
+		- AddLast
+	- 4 different methods to remove a node
+		- Remove(LinkedListNode) removes node
+		- Remove(T) removes first occurrence of specified value from linked list
+		- RemoveFirst()
+		- RemoveLast()
+	- Contains(T) returns bool if value exists in linked list
+
+
+
+Stacks -
+	- Data that's the last in is the first out (like a stack of books)
+	- 'Push' items onto the stack and 'Pop' items off
+	- If Count is < capacity of the stack, Push is O(1), otherwise Push is O(n) because more memory needs to be allocated
+	
+
+
+Queues - 
+	- Data that's the first in is the first out (like a queue at the grocery store)
+	- Adding an item to the list is called Enqueue, removing is called Dequeue
+	- As items are added to the queue, the capacity is automatically increased
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Trees -
+	- Every node in a tree as two sub components, a left subtree and a right subtree (similar to the Family tree in Granite)
+	- Trees are space efficient because we do not need to specify the size of the tree
+	- 'A' is the root node and does not have a parent
+	- 'Leaf' is a node with no children
+	- 'Edge' is the link between a parent and child node
+	- 'Depth of a node' is the number of edges connecting it to the root
+	- 'Height of a node' is the number of edges from a specified node to the deepest leaf node
+	- Implementation can be done via Linked List or Array
+	- When implementing a Linked List, each pointer at the nodes point to the child of the node
+	
+	Binary Tree - 
+		- Each node has zero, one, or two children
+		
+		Strict Binary Tree -
+			- Each node has zero or two children, never one 
+				0
+			       / \
+			      0   0
+			     /\   
+			    0  0
+
+		Full Binary Tree - 
+			- Each node beside the leaf nodes have two children 
+			- All leaf nodes are on the same level
+				0
+			       / \
+			      0   0
+			     /\   /\
+			    0  0 0  0
+	
+		Complete Binary Tree - 
+			- All levels are as filled as possible except the last
+			- All keys are as left as possible
+                                0
+			       / \
+			      0   0
+			     /\   /
+			    0  0 0  
+	
+	Depth/Traversing - O(n)
+				20
+			       /  \
+			     100   3
+			     /\   /  \
+			   50 15 250 35
+			   /
+			  222		
+		- Pre-Order Traversal - Root, Left, Right
+			- 20, 100, 50, 222, 15, 3, 250, 35
+		- In-Order Traversal - Left, Root, Right
+			- 222, 50, 100, 15, 20, 250, 3, 35
+		- Post-Order Traversal - Left, Right, Root
+			- 222, 50, 100, 15, 20, 250, 3, 35
+		- Level-Order Traversal - move one level at a time, right to left, like reading a book
+			- 20,100, 3, 50, 15, 250, 35, 222
+
+	Searching - 
+		- Best to use Queue instead of a Stack (level-order traversing is best way to search for a value)
+		
+	Inserting - 
+		- At Root if root is null
+		- Otherwise insert at first vacant child
+
+	Deleting - 
+		- If item exists, swap node item you're deleting with deepest node, then delete deepest node
+
+
+
+Graphs - 
+	- Non-linear data structure consisting of nodes and edges
+	- Contain a finite set of nodes and a set of edges that connect 2 nodes together
+	- Similar to an XREF table 
+
+
+
+Heaps - 
+	- Heaps are types of Complete Binary Trees
+	- Min-Heap orders its largest nodes at the leaves of the tree and smaller up toward the root
+	- Max-Heap orders the largest nodes toward the root of the tree down to the smaller leaves	
+
+
+HashSets - 
+	- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
