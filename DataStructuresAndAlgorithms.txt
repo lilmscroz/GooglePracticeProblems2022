@@ -30,7 +30,6 @@ Big O Notation
 Arrays - 
 	- Allocation of memory is done dynamically (done during execution of code)
 	- Declared like int[] arrayName;
-	- Array type implements IEnumerable
 	- Does not accept null values
 
 
@@ -68,10 +67,6 @@ Queues -
 	- Data that's the first in is the first out (like a queue at the grocery store)
 	- Adding an item to the list is called Enqueue, removing is called Dequeue
 	- As items are added to the queue, the capacity is automatically increased
-
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -157,8 +152,23 @@ Heaps -
 	- Max-Heap orders the largest nodes toward the root of the tree down to the smaller leaves	
 
 
+
 HashSets - 
-	- 
+	- Can not contain duplicates
+	- You cannot sort the elements, as no order is defined (not technically in order or out of order)
+	- Similar to a grocery list
+
+
+
+Hash Tables/Maps - 
+	- Collection of key/value pairs
+	- Keys cannot be null but values can be
+	- Hash table elements can be of the same or different types
+	- Stored in a dictionary 
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
